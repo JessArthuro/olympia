@@ -1,0 +1,17 @@
+.btn_primary {
+  background-color: var(--orange);
+  color: var(--white);
+  border: 1.5px solid var(--orange);
+  padding: 0.6rem 1.25rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.3s linear;
+
+  &:hover {
+    background: none;
+    color: var(--orange);
+  }
+}

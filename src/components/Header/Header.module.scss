@@ -1,0 +1,44 @@
+.header_section {
+  background-color: var(--dark-blue);
+  padding: 1.75rem 0 1rem;
+  position: sticky;
+  top: 0; left: 0;
+  transition: 0.3s linear;
+  // border-bottom: 1px solid var(--gray-100);
+
+  &.header_scrolling {
+    padding: 0.85rem 0;
+    border-bottom: 1.5px solid var(--gray-100);
+
+    .header_logo {
+      height: 3.25rem;
+    }
+  }
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  height: 3.65rem;
+  transition: 0.3s linear;
+}
+
+.nav_list {
+  display: flex;
+  column-gap: 2.5rem;
+}
+
+.nav_link {
+  font-size: 0.9rem;
+  color: var(--gray-200);
+  text-transform: capitalize;
+  transition: 0.3s linear;
+
+  &.active, &:hover {
+    color: var(--white);
+  }
+}

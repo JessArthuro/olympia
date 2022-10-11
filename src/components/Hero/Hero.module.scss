@@ -1,0 +1,56 @@
+.hero_section {
+  background-color: var(--dark-blue);
+  height: 600px;
+  color: var(--white);
+  padding: 2rem 0;
+}
+
+.hero_information {
+  display: flex;
+  justify-content: space-between;
+  // border: 1px solid red;
+}
+
+.hero_title {
+  font-size: 2.85rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3.5rem;
+  max-width: 35rem;
+  // border: solid;
+}
+
+.hero_description {
+  max-width: 25rem;
+}
+
+.hero_subtitle {
+  color: var(--gray-200);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.hero_buttons {
+  display: flex;
+  column-gap: 2.25rem;
+}
+
+.btn_video {
+  // border: 1px solid var(--gray-200);
+  color: var(--gray-200);
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  column-gap: .65rem;
+  cursor: pointer;
+  transition: 0.3s linear;
+
+  &:hover {
+    color: var(--white);
+  }
+}
+
+.icon_play {
+  color: var(--white);
+  font-size: 1.25rem;
+}
