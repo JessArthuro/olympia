@@ -1,4 +1,4 @@
-import style from "./Header.module.scss";
+import style from "./header.module.scss";
 
 function NavLink({ isActive, href, name }) {
   return (

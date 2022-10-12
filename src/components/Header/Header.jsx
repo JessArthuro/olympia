@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NavLink from "./NavLink";
-import BtnPrimary from "../BtnPrimary/BtnPrimary";
-import style from "./Header.module.scss";
+import BtnPrimary from "../btn-primary/BtnPrimary";
+import style from "./header.module.scss";
 
 const { header_section, header_scrolling, header_content, header_logo, nav_list} = style;
 
