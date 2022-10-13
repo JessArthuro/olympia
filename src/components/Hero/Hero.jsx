@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-import BtnPrimary from "../btn-primary/BtnPrimary";
+import BtnPrimary from "../btn_primary/BtnPrimary";
 import { AiFillPlayCircle } from "react-icons/ai";
 import style from "./hero.module.scss";
 import ItemCarousel from "./ItemCarousel";
@@ -43,30 +43,46 @@ function Hero() {
       </div>
 
       <Swiper
-        slidesPerView={"auto"}
+        speed={700}
+        // initialSlide={1}
         spaceBetween={30}
         grabCursor={true}
         centeredSlides={true}
         // La propiedad centeredSlidesBounds centrara la diapositiva activa sin agregar espacios al principio y final del control deslizante.
         centeredSlidesBounds={true}
+        breakpoints={{
+          1050: {
+            slidesPerView: "auto",
+          },
+          780: {
+            slidesPerView: 3,
+          },
+          560: {
+            slidesPerView: 2,
+          },
+        }}
         className={hero_carousel}
       >
         {/* Slide Home #1 */}
         <SwiperSlide className={slide}>
           <ItemCarousel namehotel="yellowstar hotel jimbaran" imgnumber={1} />
         </SwiperSlide>
+
         {/* Slide Home #2 */}
         <SwiperSlide className={slide}>
           <ItemCarousel namehotel="java heritage hotel" imgnumber={2} />
         </SwiperSlide>
+
         {/* Slide Home #3 */}
         <SwiperSlide className={slide}>
           <ItemCarousel namehotel="nihi sumba resort" imgnumber={3} />
         </SwiperSlide>
+
         {/* Slide Home #4 */}
         <SwiperSlide className={slide}>
           <ItemCarousel namehotel="bobocabin kintamani" imgnumber={4} />
         </SwiperSlide>
+        
         {/* Slide Home #5 */}
         <SwiperSlide className={slide}>
           <ItemCarousel namehotel="java heritage hotel" imgnumber={5} />

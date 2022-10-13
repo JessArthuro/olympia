@@ -1,3 +1,4 @@
+// ==================  style sheet for the hero component  =====================
 .hero_section {
   background-color: var(--dark-blue);
   color: var(--white);
@@ -7,6 +8,7 @@
 .hero_information {
   display: flex;
   justify-content: space-between;
+  column-gap: 2.5rem;
 }
 
 .hero_title {
@@ -29,7 +31,9 @@
 
 .hero_buttons {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 2.25rem;
+  row-gap: 1.25rem;
 }
 
 .btn_video {
@@ -95,4 +99,40 @@
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+}
+
+
+// ==================  breakpoints  =====================
+@media only screen and (max-width: 1050px) {
+  .slide {
+    &:nth-child(3) {
+      padding-top: 0;
+
+      .price_hotel {
+        display: none;
+      }
+    }
+  }
+
+  .name_hotel {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .hero_information {
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .hero_title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .hero_carousel {
+    padding: 0 1rem;
+  }
 }
