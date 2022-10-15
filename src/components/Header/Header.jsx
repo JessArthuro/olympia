@@ -66,7 +66,7 @@ function Header() {
         <nav className={`${nav_menu} ${menu ? `${menu_active}` : ""}`}>
           <ul className={nav_list}>
             <NavLink href="#." name="home" isActive={true} />
-            <NavLink href="#." name="why choose us" />
+            <NavLink href="#features" name="features" />
             <NavLink href="#." name="rooms" />
             <NavLink href="#." name="services" />
             <NavLink href="#." name="contact" />

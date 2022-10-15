@@ -1,0 +1,180 @@
+// ==================  Style sheet for the Features component  =====================
+.features_section {
+  padding: 4rem 0;
+}
+
+.features_grid {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  margin-top: 3rem;
+  column-gap: 4rem;
+  row-gap: 3rem;
+}
+
+.features_text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.85rem;
+}
+
+// ==================  List of styles for the FeaturesItem component  =====================
+.features_item {
+  max-width: 25rem;
+}
+
+.indicator_number {
+  display: inline-block;
+  background-color: var(--orange);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  padding: 0.35rem 1.25rem;
+  border-radius: 20px;
+}
+
+.item_title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--black);
+  margin: 0.85rem 0 0.35rem;
+}
+
+.item_info {
+  color: var(--gray-200);
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+}
+
+// ==================  Styles for the two images show in features pictures  =====================
+.features_pictures {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.features_img1 {
+  width: 320px;
+  height: 92%;
+  object-fit: cover;
+  margin-left: 2.5rem;
+  border-radius: 20px;
+}
+
+.features_img2 {
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  width: 300px;
+  border-radius: 20px;
+  border: 8px solid #fafafa;
+}
+
+// ==================  List of styles for the FeatureQualification component  =====================
+.feature_qualification {
+  position: absolute;
+  background-color: var(--white);
+  padding: 0.85rem 2.25rem 0.85rem 1rem;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  column-gap: 0.65rem;
+
+  &:nth-of-type(1) {
+    top: 0;
+    right: 5rem;
+  }
+
+  &:nth-of-type(2) {
+    top: 5rem;
+    left: 0;
+  }
+
+  &:nth-of-type(3) {
+    bottom: 2rem;
+    right: 1rem;
+  }
+}
+
+.qualification_image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.qualification_name {
+  text-transform: capitalize;
+  font-size: 0.85rem;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.qualification_details {
+  color: var(--gray-200);
+  font-size: 0.7rem;
+}
+
+.qualification_punctuation {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+// ==================  Breakpoints  =====================
+@media only screen and (max-width: 1020px) {
+  .features_grid {
+    grid-template-columns: 620px;
+    justify-content: center;
+  }
+
+  .features_text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .features_pictures {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .features_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features_img1 {
+    height: 100%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .features_img1 {
+    width: 100%;
+  }
+
+  .features_img2 {
+    display: none;
+  }
+
+  .feature_qualification {
+    &:nth-of-type(1) {
+      top: 1.5rem;
+      right: 0;
+      border-radius: 15px 0 0 15px;
+    }
+
+    &:nth-of-type(2) {
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 0 15px 15px 0;
+    }
+
+    &:nth-of-type(3) {
+      bottom: 1.5rem;
+      right: 0;
+      border-radius: 15px 0 0 15px;
+    }
+  }
+}
