@@ -1,0 +1,81 @@
+// ==================  Style sheet for the Hotels component  =====================
+.hotels_section {
+  padding: 4rem 0;
+}
+
+.hotels_content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+// ==================  List of styles for the HotelsItem component  =====================
+.hotels_item {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 0.75rem 0.75rem 1.35rem;
+  transition: 0.3s linear;
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+}
+
+.hotel_image {
+  width: 100%;
+  height: 13rem;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.heart_button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.2);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:focus {
+    color: var(--orange);
+  }
+}
+
+.hotel_name {
+  margin-top: 0.65rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.hotel_price {
+  color: var(--gray-200);
+  font-size: 0.85rem;
+  margin-bottom: 0.85rem;
+}
+
+.hotel_buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.route_button {
+  background-color: var(--light-orange);
+  color: var(--orange);
+  font-size: 1.1rem;
+  padding: 0.85rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
