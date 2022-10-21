@@ -1,0 +1,129 @@
+// ==================  Style sheet for the Testimonials component  =====================
+
+.testimonials_section {
+  background-color: var(--dark-blue);
+  padding: 6rem 0 4rem;
+  color: var(--gray-200);
+}
+
+.testimonials_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.testimonials_title {
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3.25rem;
+  max-width: 28rem;
+}
+
+.testimonials_description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  max-width: 30rem;
+}
+
+.testimonials_subtitle {
+  font-size: 0.9rem;
+}
+
+.testimonials_buttons {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 1rem;
+}
+
+// ==================  List of styles for the TestimonialsBtn component  =====================
+
+.testimonials_btn {
+  background-color: var(--orange);
+  color: var(--white);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 1.35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.prev_btn {
+  background-color: var(--light-orange);
+  color: var(--orange);
+}
+
+.testimonials_swiper {
+  margin-top: 3rem;
+}
+
+// ==================  List of styles for the Testimony component  =====================
+
+.testimony_content {
+  background-color: var(--light-blue);
+  padding: 1.5rem;
+  border-radius: 15px;
+  min-height: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quotes_icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.testimony_description {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimony_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1.5px solid var(--gray-100);
+  padding-top: 1.25rem;
+}
+
+.testimony_author {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+.author_name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.author_country {
+  font-size: 0.7rem;
+}
+
+.testimony_image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+// ==================  Breakpoints  =====================
+
+@media only screen and (max-width: 820px) {
+  .testimonials_info {
+    flex-direction: column;
+  }
+
+  .testimonials_buttons {
+    justify-content: flex-start;
+  }
+}

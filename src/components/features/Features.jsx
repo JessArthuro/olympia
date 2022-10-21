@@ -34,7 +34,7 @@ function Features() {
           />
 
           <FeatureQualification
-            imgname="men4"
+            imgname="men1"
             name="vincent rompies"
             punctuation="4.7"
           />
