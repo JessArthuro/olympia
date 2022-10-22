@@ -4,6 +4,7 @@ import Hero from './components/hero/Hero';
 import Features from './components/features/Features';
 import Hotels from './components/hotels/Hotels';
 import Testimonials from './components/testimonials/Testimonials';
+import Footer from './components/footer/Footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Testimonials />
       </main>
       
+      <Footer />
     </div>
   );
 }

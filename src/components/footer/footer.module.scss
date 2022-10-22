@@ -1,0 +1,124 @@
+// ==================  Style sheet for the Footer component  =====================
+.footer_section {
+  padding: 6rem 0 2rem;
+}
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: 300px repeat(3, 1fr) 300px;
+}
+
+.footer_image {
+  height: 4rem;
+}
+
+.footer_description {
+  font-size: 0.9rem;
+  color: var(--gray-200);
+  max-width: 15rem;
+}
+
+.social_links {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+// ==================  List of styles for the SocialLink component  =====================
+
+.social_link {
+  font-size: 1rem;
+  color: var(--black);
+  transition: 0.3s linear;
+
+  &:hover {
+    color: var(--orange);
+  }
+}
+
+// ==================  List of styles for the FooterGroup component  =====================
+
+.group_title {
+  font-size: 0.95rem;
+  color: var(--black);
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.footer_link {
+  color: var(--gray-200);
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  transition: 0.3s linear;
+
+  &:hover {
+    color: var(--orange);
+  }
+}
+
+.subscribe_description {
+  color: var(--gray-200);
+  font-size: 0.9rem;
+}
+
+.subscription_form {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.input_email {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--black);
+  padding-left: 1rem;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.info_dev {
+  font-size: 0.9rem;
+  color: var(--gray-200);
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.3rem;
+}
+
+.link_dev {
+  color: var(--orange);
+}
+
+// ==================  Breakpoints  =====================
+
+@media only screen and (max-width: 1130px) {
+  .footer_grid {
+    grid-template-columns: 400px repeat(3, 1fr);
+    row-gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .footer_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .footer_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .group_title {
+    margin-bottom: 1rem;
+  }
+}
