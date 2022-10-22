@@ -4,7 +4,7 @@ import NavLink from "./NavLink";
 import BtnPrimary from "../btn_primary/BtnPrimary";
 import style from "./header.module.scss";
 
-// Desestructuracion del objeto style para no tener que poner la palabra clave en cada estilo que se declare en el documento. 
+// Desestructuracion del objeto style para no tener que poner la palabra clave en cada estilo que se declare en el documento.
 const {
   header_section,
   header_scrolling,
@@ -24,6 +24,11 @@ function Header() {
   // Funcion para alternar el valor de menu. Si es true lo convierte a false y viceversa.
   const handleMenu = () => {
     setMenu(!menu);
+  };
+
+  // Funcion para ocultar el menu cuando se hace click en algun enlace de la navegacion.
+  const closeMenu = () => {
+    setMenu(false);
   };
 
   // Hook para declarar el estado inicial del header.
@@ -65,11 +70,11 @@ function Header() {
 
         <nav className={`${nav_menu} ${menu ? `${menu_active}` : ""}`}>
           <ul className={nav_list}>
-            <NavLink href="#." name="home" isActive={true} />
-            <NavLink href="#features" name="features" />
-            <NavLink href="#." name="rooms" />
-            <NavLink href="#." name="services" />
-            <NavLink href="#." name="contact" />
+            {/* El closeMenu del comienzo es el prop de ese componente y el que esta entre llaves es una funcion para cambiar el estado del menu a false. */}
+            <NavLink href="#home" name="home" isActive={true} closeMenu={closeMenu} />
+            <NavLink href="#features" name="features" closeMenu={closeMenu} />
+            <NavLink href="#hotels" name="hotels" closeMenu={closeMenu} />
+            <NavLink href="#testimonials" name="testimonials" closeMenu={closeMenu} />
           </ul>
         </nav>
 

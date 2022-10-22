@@ -2,8 +2,8 @@
 .header_section {
   background-color: var(--dark-blue);
   padding: 1.75rem 0 1rem;
-  position: sticky;
-  top: 0; left: 0;
+  position: fixed;
+  width: 100%;
   transition: 0.3s linear;
   z-index: 10000;
 

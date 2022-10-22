@@ -5,7 +5,7 @@ import style from "./hotels.module.scss";
 
 function Hotels() {
   return (
-    <section className={style.hotels_section}>
+    <section className={style.hotels_section} id="hotels">
       {/* Componente SectionTitle encargado de mostrar los titulos de cada seccion. */}
       <SectionTitle
         title="the best hotels for you"

@@ -18,7 +18,7 @@ const {
 
 function Testimonials() {
   return (
-    <section className={testimonials_section}>
+    <section className={testimonials_section} id="testimonials">
       <div className="container">
         {/* Titulos de Testimonios y botones de navegacion del Slider */}
         <div className={testimonials_info}>

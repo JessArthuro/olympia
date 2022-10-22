@@ -21,7 +21,7 @@ const {
 
 function Hero() {
   return (
-    <section className={hero_section}>
+    <section className={hero_section} id="home">
       <div className={`${hero_information} container`}>
         <h1 className={hero_title}>
           discover the best hotels & resorts to stay
