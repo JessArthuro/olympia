@@ -1,4 +1,4 @@
-![Logo](./src/img/logo_olympia1.png "Logo Olympia")
+<img src="./src/img/logo_olympia1.png" alt="Logo Olympia" height="100" />
 
 
 # Olympia - Hotels & Resorts
