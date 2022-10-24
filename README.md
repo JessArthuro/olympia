@@ -3,7 +3,7 @@
 
 # Olympia - Hotels & Resorts
 
-Website to discover hotels and resorts to stay in. Offering affordable prices and a very intuitive interface.
+Website to discover hotels and resorts where you can stay. It offers cheap prices and a very intuitive interface. The website is built with React, Sass and SwiperJs.
 
 
 ## Screenshots
@@ -11,12 +11,7 @@ Website to discover hotels and resorts to stay in. Offering affordable prices an
 ![Screenshot](./public/screenshot-olympia.png "Desktop and Mobile Screenshot")
 
 
-## Tech Stack
-
-**Client:** React, Sass, SwiperJs
-
-
-## Demo
+## Live Demo
 
 Live Site URL: [Olympia | Hotels & Resorts](https://jsarthuro-olympia.netlify.app/)
 
